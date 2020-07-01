@@ -1,0 +1,108 @@
+This topic provides a high-level look at Grafana, the Grafana process, and Grafana features. It’s a good place to start if you want to learn more about Grafana software. To jump right in, refer to Getting started.
+本主题提供了对Grafana、Grafana过程和Grafana功能的一个高层次的观察。 如果你想要更多关于Grafana软件的信息，这里是一个好的文章。 想跳过这一部分，可以去Getting Started页面。
+
+Grafana is open source visualization and analytics software. It allows you to query, visualize, alert on, and explore your metrics no matter where they are stored. In plain English, it provides you with tools to turn your time-series database (TSDB) data into beautiful graphs and visualizations.
+Grafana是一个开源的可视化和分析软件。 它允许你去查询、可视化、报警和探索你的指标，不管数据存放在哪里。 简单地讲，它提供了一个功能，将你的时间序列化数据库中的数据，转换成为更好看的可视化图表。
+
+After creating a dashboard like you do in Getting started, there are many possible things you might do next. It all depends on your needs and your use case.
+就像你在Getting Started里创建了Dashboard之后，你接下来能做更多的事情。 这取决于你的需求和情况。
+
+For example, if you want to view weather data and statistics about your smart home, then you might create a playlist. If you are the administrator for a corporation and are managing Grafana for multiple teams, then you might need to set up provisioning and authentication.
+例如， 如果你想查看关于你家的天气数据和分析数据， 那么你可以创建一个PlayList。 如果你是一个公司的管理者， 使用Grafana管理着不同的团队， 那么你就要建立provisioning和authentication。
+
+The following sections provide an overview of things you might want to do with your Grafana database and links so you can learn more. For more guidance and ideas, check out the Grafana Community forums.
+接下来的章节，为你提供了一些概览， 帮助你在Grafana里想做的事情， 并给你提供了Link来帮助你了解更多。 想要了解更多指南，可以查看Grafana Community forums。
+
+Explore metrics and logs
+探索指标和日志
+Explore your data through ad-hoc queries and dynamic drilldown. Split view and compare different time ranges, queries and data sources side by side.
+通过ad-hoc查询并深度挖掘来探索你的数据。 使用不同的视图，并对比不同的时间范围，查询条件和数据源。
+
+Refer to Explore for more information.
+可以转到Explore去了解更多。
+
+Alerts
+报警
+If you’re using Grafana alerting, then you can have alerts sent through a number of different alert notifiers, including PagerDuty, SMS, email, VictorOps, OpsGenie, or Slack.
+如果你正在使用Grafana的报警功能， 你可以使用不同的报警类型来发送你的警告， 包括PagerDuty, SMS, email, VictorOps, OpsGenie, 或 Slack。
+
+Alert hooks allow you to create different notifiers with a bit of code if you prefer some other channels of communication. Visually define alert rules for your most important metrics.
+如果你更倾向于其他渠道的方式，Alert hooks允许去创建不同的通知。 可视化的为你的重要指标定义报警规则。
+
+Annotations
+注释
+Annotate graphs with rich events from different data sources. Hover over events to see the full event metadata and tags.
+使用来自不同数据源的丰富事件注释图表。将鼠标悬停在事件上可以查看完整的事件元数据和标记。
+
+This feature, which shows up as a graph marker in Grafana, is useful for correlating data in case something goes wrong. You can create the annotations manually—just control-click on a graph and input some text—or you can fetch data from any data source.
+在Grafana中显示图表标记，对于出现问题的数据是非常有帮助的。 你可以在图表中手动创建一个注释，并输入一些文本，或者从你的任何数据源中拿取数据。
+
+Refer to Annotations for more information.
+转到Annotations去了解更多信息。
+
+Dashboard variables
+Dashboard变量
+Template variables allow you to create dashboards that can be reused for lots of different use cases. Values aren’t hard-coded with these templates, so for instance, if you have a production server and a test server, you can use the same dashboard for both.
+模板变量允许你创建一个，在不同情况下都可以重复使用的Dashboard。 在这些模板中，Value不是写死的，举例来说，如果你有生产服务和测试服务，是可以使用相同的Dashboard的。
+
+Templating allows you to drill down into your data, say, from all data to North America data, down to Texas data, and beyond. You can also share these dashboards across teams within your organization—or if you create a great dashboard template for a popular data source, you can contribute it to the whole community to customize and use.
+模板允许你向下拉取你的数据，例如，从所有数据到北美数据，再到德州数据，等等。 你也可以分享这些Dashboard给你的同事，或者你也可以为常用的数据源创建大量的Dashboard，并贡献给社区，让别人自定义使用。
+
+Configure Grafana
+配置Grafana
+If you’re a Grafana administrator, then you’ll want to thoroughly familiarize yourself with Grafana configuration options and the Grafana CLI.
+如果你是Grafana的管理者， 那么你需要彻底熟悉Grafana的配置项和Grafana的CLI。
+
+Configuration covers both config files and environment variables. You can set up default ports, logging levels, email IP addresses, security, and more.
+配置包括配置文件和环境变量。你可以设置默认的端口，日志级别，邮件IP地址，安全性或更多。
+
+Import dashboards and plugins
+导入Dashboard和插件
+Discover hundreds of dashboards and plugins in the official library. Thanks to the passion and momentum of community members, new ones are added every week.
+在官方库中有着数百种Dashboard和插件。 感谢社区成员的热情和动力，每周都有新成员加入。
+
+Authentication
+认证
+Grafana supports different authentication methods, such as LDAP and OAuth, and allows you to map users to organizations. Refer to the User authentication overview for more information.
+Grafana支持不同的认证方式，例如LDAP和OAuth，并且允许你将用户映射到组织。跳到User authentication overview去了解更多信息。
+
+In Grafana Enterprise, you can also map users to teams: If your company has its own authentication system, Grafana allows you to map the teams in your internal systems to teams in Grafana. That way, you can automatically give people access to the dashboards designated for their teams.
+在Grafana企业版中，你也可以映射用户到团队：如果你的公司有自己的认证系统，Grafana允许你将你内部系统中的团队映射到Grafana中的团队。也就是说，你可以自动通过他们的团队来给定相应Dashboard权限。
+
+Refer to Grafana Enterprise for more information.
+跳到Grafana Enterprise去了解更多。
+
+Provisioning
+While it’s easy to click, drag, and drop to create a single dashboard, power users in need of many dashboards will want to automate the setup with a script. You can script anything in Grafana.
+虽然单击、拖放可以很容易地创建单个Dashboard，但需要多个仪表板的高级用户将希望使用脚本自动化设置。 你可以在Grafana中写任何脚本。
+
+For example, if you’re spinning up a new Kubernetes cluster, you can also spin up a Grafana automatically with a script that would have the right server, IP address, and data sources preset and locked in so users cannot change them. It’s also a way of getting control over a lot of dashboards.
+例如，如果你创建了一个Kubernets cluster，你也可以创建一个Grafana的自动脚本，预设好正确的Server，IP地址和数据源。这是一种控制很多Dashboard的方法。
+
+Refer to Provisioning for more information.
+跳到Provisioning去了解更多信息。
+
+Permissions
+许可
+When organizations have one Grafana and multiple teams, they often want the ability to both keep things separate and share dashboards. You can create a team of users and then set permissions on folders, dashboards, and down to the data source level if you’re using Grafana Enterprise.
+当多个团队只有一个Grafana的时候，他们想要去保持相互的独立性并一起使用Dashboard。你可以通过Grafana企业版创建一个团队用户，你可以为文件夹，Dashboard和数据源设置权限访问。
+
+Grafana Cloud
+Grafana云
+Grafana Cloud is a highly available, fast, fully managed OpenSaaS logging and metrics platform. Everything you love about Grafana, but Grafana Labs hosts it for you and handles all the headaches.
+Grafana云是一个高可用，快速，有着充分组织力的OpenSaas日志和指标平台。你喜欢Grafana的所有东西，都由Grafana实验室为你提供服务并处理所有头疼的问题。
+
+Learn more about Grafana Cloud.
+学习更多关于Grafana Cloud。
+
+Grafana Enterprise
+Grafana企业版
+Grafana Enterprise is a commercial edition of Grafana that includes additional features not found in the open source version.
+Grafana Enterprise是Grafana的一个商业版本，它包含了在开源版本中没有的附加特性。
+
+Building on everything you already know and love about Grafana, Grafana Enterprise adds enterprise data sources, advanced authentication options, more permission controls, 24x7x365 support, and training from the core Grafana team.
+基于你已经掌握了Grafana，Grafana企业版添加了企业级的数据源，更多的认证方式，更多的权限控制方式，365天24小时的支持，并可以由Grafana核心团队为你培训。
+
+Learn more about Grafana Enterprise. To purchase Enterprise or obtain a trial license, contact the Grafana Labs Sales Team.
+
+
